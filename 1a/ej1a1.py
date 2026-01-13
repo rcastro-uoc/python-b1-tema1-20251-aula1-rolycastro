@@ -38,10 +38,40 @@ Exemple:
      55
 
 '''
+"""
+# Version 2
 
 def fibonacci(fibonacci_number):
     # Write here your code
-    pass
+    # Validaciones
+    if not isinstance(fibonacci_number, int):
+        raise ValueError("Number must be integer.")
+    elif fibonacci_number < 0:
+        raise ValueError("Number must be greater than 0.")
+    else:
+        a, b = 0, 1
+    for _ in range(fibonacci_number):
+        a, b = b, a + b
+    return a
+"""
+def fibonacci(fibonacci_number):
+    # Validaciones
+    if not isinstance(fibonacci_number, int):
+        raise ValueError("El parámetro 'fibonacci_number' debe ser un número entero.")
+    if fibonacci_number < 0:
+        raise ValueError("El parámetro 'fibonacci_number' no puede ser menor que 0.")
+
+    # Casos base (serie: 0, 1, 1, 2, 3, 5...)
+    if fibonacci_number == 0:
+        return 0
+    if fibonacci_number == 1:
+        return 1
+
+    # Cálculo iterativo
+    a, b = 0, 1
+    for _ in range(2, fibonacci_number + 1):
+        a, b = b, a + b
+    return b
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
