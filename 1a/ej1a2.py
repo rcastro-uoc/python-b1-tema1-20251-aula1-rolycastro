@@ -66,4 +66,4 @@ def sum_odd_numbers(list_numbers):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))
+# print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))
