@@ -13,3 +13,6 @@ def test_sum_odd_numbers_invalid_numbers():
         sum_odd_numbers([1.5,2,3,4,5]), "sum_odd_numbers should raise an error for the input [1.5,2,3,4,5]"
     with pytest.raises(ValueError):
         sum_odd_numbers(['1',2,3,4,5]), "sum_odd_numbers should raise an error for the input ['1',2,3,4,5]"
+
+# Para ejecutar este test
+# python -m pytest 1a/ej1a2_test.py -q
