@@ -67,6 +67,15 @@ import math
 
 def calculate_angle(angle):
     # Write here your code
+    # Validacion de datos
+    if not isinstance(angle, (int, float)) or isinstance(angle, bool):
+        raise ValueError("El parametro 'angle' debe ser un numero")
+    
+    radians = math.radians(angle)
+    sine_value = math.sin(radians)
+
+    return round(sine_value, 2)
+
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
