@@ -14,3 +14,6 @@ def test_fibonacci_invalid_input():
         fibonacci(1.5), "fibonacci does not return the correct value for input 1.5. It should raise an error"
     with pytest.raises(ValueError):
         fibonacci("5"), "fibonacci does not return the correct value for input '5'. It should raise an error"
+
+# Para ejecutar este test
+# python -m pytest 1a/ej1a1_test.py -q
