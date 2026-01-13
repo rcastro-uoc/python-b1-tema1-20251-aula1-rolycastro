@@ -13,3 +13,6 @@ def test_results():
     ave, standard = results(numbers)
     assert round(ave,2) == 30, "results does not return the correct average value for input [10, 20, 30, 40, 50]. It should be 30"
     assert round(standard,2) == 14.14, "results does not return the correct standard deviation value for input [10, 20, 30, 40, 50]. It should be 14.14"
+
+# Para ejecutar este test
+# python -m pytest 1b/ej1b4_test.py -q

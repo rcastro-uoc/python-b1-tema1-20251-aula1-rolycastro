@@ -66,8 +66,25 @@ import numpy as np
 
 def results(list_numbers):
     # Write here your code
+    #
+    if not isinstance(list_numbers, list) or len(list_numbers) == 0:
+        raise ValueError("El parametro 'list_numbers' debe ser una lista no vacia")
+    
+    for n in list_numbers:
+        if not isinstance(n, (int, float)) or isinstance(n, bool):
+            raise ValueError("La lista debe contener solo numeros (int o float).")
+        
+    avg = round(float(np.mean(list_numbers)), 2)
+    std = round(float(np.std(list_numbers)), 2)
+
+    print(f"Average: {avg}")
+    print(f"Standard deviaition: {std}")
+
+    return avg, std
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
+
+print(results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]))
