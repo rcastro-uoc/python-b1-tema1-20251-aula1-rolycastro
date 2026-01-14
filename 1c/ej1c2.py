@@ -37,10 +37,17 @@ Exemple
 
 def invert_list(lst):
     # Write here your code
-    pass
+    if not isinstance(lst, list):
+        raise ValueError("El parametro 'lst' debe ser una lista")
+    # Caso base:lista vacia o de 1 elemento. se cnsidera que ya esta invertida
+    if len(lst) <= 1:
+        return lst
+    
+    # Paso recursivo: invierte el resto y añade el primero al final.
+    return invert_list(lst[1:]) + [lst[0]]
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # lst = [1, 20, 3, 40, 5]
-#print(invert_list(lst))
+# print(invert_list([1,2,3,4,5]))

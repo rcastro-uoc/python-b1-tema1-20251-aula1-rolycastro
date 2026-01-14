@@ -16,3 +16,4 @@ def test_results():
 
 # Para ejecutar este test
 # python -m pytest 1b/ej1b4_test.py -q
+# ejecutar todos los test: python -m pytest

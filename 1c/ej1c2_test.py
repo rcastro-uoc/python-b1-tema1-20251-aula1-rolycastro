@@ -10,3 +10,6 @@ def test_invert_list():
     assert invert_list([]) == [], "invert_list does not return the correct value for input []. It should be []"
     # Prueba con una lista que contiene un solo elemento
     assert invert_list([10]) == [10], "invert_list does not return the correct value for input [10]. It should be [10]"
+
+# Para ejecutar este test
+# python -m pytest 1c/ej1c1_test.py -q

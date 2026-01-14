@@ -87,4 +87,4 @@ def results(list_numbers):
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
 
-print(results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]))
+# print(results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]))

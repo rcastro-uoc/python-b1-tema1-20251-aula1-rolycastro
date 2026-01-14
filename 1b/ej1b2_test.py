@@ -8,3 +8,6 @@ def test_calculate_angle():
     assert math.isclose(calculate_angle(180), 0, rel_tol=0.01), "calculate_angle does not return the correct value for input 180. It should be around 0"
     assert math.isclose(calculate_angle(270), -1, rel_tol=0.01), "calculate_angle does not return the correct value for input 270. It should be around -1"
     assert math.isclose(calculate_angle(45), 0.71, rel_tol=0.01), "calculate_angle does not return the correct value for input 45. It should be around 0.71"
+
+# Para ejecutar este test
+# python -m pytest 1b/ej1b2_test.py -q

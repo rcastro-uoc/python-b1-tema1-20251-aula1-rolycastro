@@ -42,6 +42,8 @@ Exemple:
 
 def is_palindrome(word):
     # Write here your code
+    if not isinstance()
+
     pass
 
 

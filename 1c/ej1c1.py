@@ -47,10 +47,23 @@ Exemple:
 
 def mult_recursive(value, times):
     # Write here your code
-    pass
+        if not isinstance(value, int) or isinstance(value, bool):
+                raise ValueError("El parametro 'value' debe ser un entero")
+        if not isinstance(times, int) or isinstance(times, bool):
+                raise ValueError("El parametro 'times' debe ser un enterp")
+        if times < 0:
+                raise ValueError("'times' no puede ser negativo")
+        
+        # Caso con cero
+        if times == 0:
+                return 0
+        
+        # Paso recursivo: value + (value sumado times - 1 veces)
+        return value + mult_recursive(value, times-1)
+
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 #if __name__ == "__main__":
-#    print("Must print 6: ", mult_recursive(2, 3))
+# print("Must print 6: ", mult_recursive(2, 3))
