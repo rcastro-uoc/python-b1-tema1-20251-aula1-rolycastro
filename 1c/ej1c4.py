@@ -42,7 +42,19 @@ Exemple:
 
 def is_palindrome(word):
     # Write here your code
-    #if not isinstance()
+    if not isinstance(word, str):
+        raise ValueError("El parametro 'word' debe ser un string")
+    
+    # Caso base: 0 o 1 - caracter que se consideran palindromos
+    if len(word) <= 1:
+        return True
+    
+    # Si el caracter primero y el ultimo no coinciden, no es palindromo
+    if word[0] != word[-1]:
+        return False
+    
+    # Recursion: mira el inteior - sin caracteres mrimero y ultimo
+    return is_palindrome(word[1:-1])
 
     pass
 
@@ -53,4 +65,8 @@ def is_palindrome(word):
 # print(f"Is '{word}' word palindrome?", is_palindrome(word))
 #
 # word = "juan"
-# print(f"Is '{word}' word palindrome?", is_palindrome(word))
+# print(f"Is 'racecar' word palindrome?", is_palindrome("racecar"))
+# print(f"Is 'juan' word palindrome?", is_palindrome("juan"))
+# print(f"Is 'cerurec' word palindrome?", is_palindrome("cerurec"))
+# print(f"Is 'amarirama' word palindrome?", is_palindrome("amarirama"))
+

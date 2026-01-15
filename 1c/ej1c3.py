@@ -63,4 +63,4 @@ def find_max(lst):
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # numbers_list = [1, 5, 2, 7, 3]
-print(find_max([1, 5, 2, 7, 3]))
+#print(find_max([1, 5, 2, 7, 3]))
