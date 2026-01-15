@@ -15,3 +15,4 @@ def test_is_palindrome():
 
 # Para ejecutar este test
 # python -m pytest 1c/ej1c4_test.py -q
+# ejecutar todos los test: python -m pytest
